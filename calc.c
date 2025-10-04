@@ -53,3 +53,21 @@ void calc_parse(char** args, struct calc_input* res)
         res->operand2 = num2;
         res->operator = op;
 }
+
+/* Performs the actual calculation and returns the result */
+double calc_compute(struct calc_input* in)
+{
+        switch (*in->operator) {
+        case '+':
+                return in->operand1 + in->operand2;
+        case '-':
+                return in->operand1 - in->operand2;
+        case '/':
+                return in->operand1 / in->operand2;
+        case '*':
+                return in->operand1 * in->operand2;
+        default:
+                fprintf(stderr, "operation unknown: %s", in->operator);
+                return NAN;
+        }
+}

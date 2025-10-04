@@ -9,8 +9,12 @@ int main(int argc, char* argv[argc + 1])
                 printf("usage: %s <operand> <+-/*> <operand>\n", argv[0]);
                 return EXIT_FAILURE;
         }
+
+        // Create calc_input object and parse user input
         struct calc_input in = calc_input_init();
         calc_parse(argv, &in);
-        calc_print_input(&in);
+
+        printf("result: %g\n", calc_compute(&in));
+
         return EXIT_SUCCESS;
 }
