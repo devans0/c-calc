@@ -1,0 +1,2 @@
+* C CALC
+This is a simple command-line calculator begun as a beginner project for learning C programming. Currently only supports two operands using infix notation.
