@@ -1,2 +1,7 @@
 * C CALC
 This is a simple command-line calculator begun as a beginner project for learning C programming. Currently only supports two operands using infix notation.
+
+* Planned Features
+ - [ ] Polish notation
+ - [ ] Arbitrary-length input (e.g. x + y + z + ... / + x y z ...)
+ - [ ] Allow wide range of input formats to be understood; robust against formats, inclusion/exclusion of spaces, etc.
